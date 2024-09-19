@@ -8,7 +8,18 @@ class Testing {
             System.out.println();
   int number = 102;
   System.out.println("The number of keys on a keyboard is " + number);
-  
+
+
+double circ;
+double rad = 3.0; // the radius
+// Math.PI is Java's stored constant for π
+circ = 2 * Math.PI * rad; // the circumference
+
+ // Print out the circumference with the sentence
+ // "The circumference of a circle of radius 3.0
+ // is 18.84955592153876", using the variable circ.
+ 
+ System.out.println(circ);
     // your code ends here!
   }
 }
