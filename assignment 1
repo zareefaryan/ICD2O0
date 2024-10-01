@@ -20,36 +20,35 @@ public class Assignment1 {
         double length; // value of length
         double width; // value of width
         Scanner sc = new Scanner (System.in); // putting the scanner in a variable
-                System.out.println("length is:  "); // input for length
+                System.out.println(" rectangle length is:  "); // input for length
                  length = sc.nextDouble(); // scans for length
-                System.out.println("width is: "); // input for width
+                System.out.println("rectangle width is: "); // input for width
                 width = sc.nextDouble(); // scans for length
-                System.out.printf("%.2f", length*width
-                ); // print the value of length times width
-                System.out.println("that is the area"); // stating that is the area
+                System.out.printf("%.2f", length*width); // print the value of length times width
+                System.out.printf("\n that is the area"); // stating that is the area
         double radius;
         double diameter;
-                System.out.println("radius is:  ");
+                System.out.printf("\n circle radius is:  ");
                  radius = sc.nextDouble();
                  diameter = (radius*radius);
-                 System.out.println(Math.PI*diameter);
-                 System.out.println("that is the area of a circle");
+                 System.out.printf("%.2f", Math.PI*diameter);
+                 System.out.printf("\n that is the area of a circle");
         double radius2;
         double height;
-                System.out.println("radius2 is: ");
+                System.out.printf("\n radius for cylinder is: ");
                 radius2 = sc.nextDouble();
-                System.out.println("height is:");
+                System.out.printf("\n height of cylinder is:");
                 height = sc.nextDouble();  
                 double diameter2 = (radius*radius);
-                System.out.println("the Volume is");
-                System.out.println(Math.PI*diameter2*height);
+                System.out.printf("\n the Volume is");
+                System.out.printf("\n ", Math.PI*diameter2*height);
                 System.out.println("the surface area is");
                 double OK = (2*Math.PI*radius2*height);
                 double Okay = (2*Math.PI*radius2*diameter2);
                 System.out.println(OK+Okay);
         double g = 9.8;
         double L;
-                System.out.println("meters are:");
+                System.out.println("how long meter pendulum are:");
                 L = sc.nextDouble();
         double Yes = (g*L);
         double square = (Math.sqrt(Yes));
