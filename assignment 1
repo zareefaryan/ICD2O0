@@ -20,40 +20,39 @@ public class Assignment1 {
         double length; // value of length
         double width; // value of width
         Scanner sc = new Scanner (System.in); // putting the scanner in a variable
-                System.out.println(" rectangle length is:  "); // input for length
+                System.out.printf("\n rectangle length is:  "); // input for length
                  length = sc.nextDouble(); // scans for length
-                System.out.println("rectangle width is: "); // input for width
+                System.out.printf("\n rectangle width is: "); // input for width
                 width = sc.nextDouble(); // scans for length
-                System.out.printf("%.2f", length*width); // print the value of length times width
-                System.out.printf("\n that is the area"); // stating that is the area
-        double radius;
-        double diameter;
-                System.out.printf("\n circle radius is:  ");
-                 radius = sc.nextDouble();
-                 diameter = (radius*radius);
-                 System.out.printf("%.2f", Math.PI*diameter);
-                 System.out.printf("\n that is the area of a circle");
-        double radius2;
-        double height;
-                System.out.printf("\n radius for cylinder is: ");
-                radius2 = sc.nextDouble();
-                System.out.printf("\n height of cylinder is:");
-                height = sc.nextDouble();  
-                double diameter2 = (radius*radius);
-                System.out.printf("\n the Volume is");
-                System.out.printf("\n ", Math.PI*diameter2*height);
-                System.out.println("the surface area is");
-                double OK = (2*Math.PI*radius2*height);
-                double Okay = (2*Math.PI*radius2*diameter2);
-                System.out.println(OK+Okay);
-        double g = 9.8;
-        double L;
-                System.out.println("how long meter pendulum are:");
-                L = sc.nextDouble();
-        double Yes = (g*L);
-        double square = (Math.sqrt(Yes));
-        Double Ta = (Math.PI*2);
-        System.out.println("Time for one pendulum swing");
-        System.out.println(square*Ta);
+                System.out.printf("%.2f", length*width); // print the value of length times width with 2 decimal places
+                System.out.printf("\n \n that is the area of the rectangle"); // stating that is the area
+        double radius; // value of radius
+                System.out.printf("\n \n circle radius is:  "); // input for radius
+                 radius = sc.nextDouble(); // scans for radius input
+        double di = (radius*radius); // value of radius times radius
+                 System.out.printf("%.2f", Math.PI*di); // prints area with 2 decimal places
+                 System.out.printf("\n \n that is the area of the circle"); // states that's the area
+        double radius2; // second radius value
+        double height; // height value
+                System.out.printf("\n \n radius for cylinder is: "); // input for radius
+                radius2 = sc.nextDouble(); // scans for radius 2
+                System.out.printf("\n height of cylinder is:"); // input for height
+                height = sc.nextDouble();  //scans for height
+                double di2 = (radius2*radius2); // value of second radius value times itself
+                System.out.printf("\n the Volume of cylinder is \n"); // thats this is the volume of the cylinder
+                System.out.printf("%.2f", Math.PI*di2*height); // prints volume of cylinder
+                System.out.println("\n the surface area of cylinder is"); // states this is the surface area of a cylinder
+                double OK = (2*Math.PI*radius2*height); // value for first part of surface area equation
+                double Okay = (2*Math.PI*radius2*di2); // value for second part of surface area equation
+                System.out.printf("%.2f", OK+Okay); // prints surface area
+        double g = 9.8; // value of gravity
+        double L; // value of length of pendulum
+                System.out.printf("\n \n length of pendulum in meters:"); // input for length in meters
+                L = sc.nextDouble(); // scans for length
+        double Yes = (L/g); // value that contains length divided by gravity
+        double square = (Math.sqrt(Yes)); // square roots "Yes" value
+        Double Ta = (Math.PI*2); // doubles pi
+        System.out.printf("\n Time for one pendulum swing in seconds \n"); // states that's the time for one pendulum swing in seconds
+        System.out.printf("%.2f", square*Ta); // prints pendulum swing speed
     } 
 }
