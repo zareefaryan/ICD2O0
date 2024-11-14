@@ -1,0 +1,12 @@
+class strings {
+   public static void main(String [] args) {
+      String w1 = "shellshock";
+      String w2 = "shellac";
+      String w3 = "fortify";
+      if ((w1.compareTo(w2) < 0)&&(w2.compareTo(w3)<0)) {
+        
+      }
+      // enter your code here!
+      
+   }
+}
