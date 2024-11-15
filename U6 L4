@@ -1,12 +1,16 @@
 class strings {
    public static void main(String [] args) {
-      String w1 = "shellshock";
-      String w2 = "shellac";
-      String w3 = "fortify";
-      if ((w1.compareTo(w2) < 0)&&(w2.compareTo(w3)<0)) {
-        
-      }
+      String a = "";
+      String b = "shellac";
+      String c = "fortify";
+      if ((a.compareTo(b) < 0)&&(b.compareTo(c)<0)) {
+      } else if ((b.compareTo(a) < 0)&&(a.compareTo(c)<0)) {
+      } else if ((a.compareTo(c) < 0)&&(c.compareTo(b)<0)) {
+      }  else if ((b.compareTo(c) < 0)&&(c.compareTo(a)<0)) {
+      }    else if ((c.compareTo(a) < 0)&&(a.compareTo(b)<0)) {
+      }      else if ((c.compareTo(b) < 0)&&(b.compareTo(a)<0)) {
+              System.out.println(c + " comes before " + b + " comes before " + a);
+            }
       // enter your code here!
-      
    }
 }
