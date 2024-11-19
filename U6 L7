@@ -1,0 +1,18 @@
+// any import statements go here!
+import java.util.Scanner;
+
+class Calc {
+  public static void main(String [] args) {
+ 	 Scanner kb = new Scanner(System.in);
+    int choice = 0;
+    boolean valid = false;
+    while (! valid) {
+        System.out.print("Choose 1-10: ");
+        choice = kb.nextInt();
+        valid = ((choice >= 1) && (choice <= 10));
+        
+    }
+    System.out.printf("You chose: %d\n", choice);
+  }
+}
+        // Yout code stops here
